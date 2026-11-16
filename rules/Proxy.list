@@ -1,0 +1,9 @@
+# 自用常规代理补充规则 (policy=默认代理)
+# 用途：日常遇到国内打不开、抽风或被阻断的海外网站/开发源，追加在此处即可走「默认代理」
+# 注意：远程规则文件内每行末尾【不要】写策略名，策略已在 Loon.conf 的 [Remote Rule] 中绑定为 默认代理
+
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,civitai.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,registry-1.docker.io

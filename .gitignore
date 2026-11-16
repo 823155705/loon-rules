@@ -1,0 +1,13 @@
+.DS_Store
+
+# 严禁将节点二维码与任何包含机场订阅、落地节点账密或 MitM 根证书私钥 (ca-p12) 的文件提交到公开仓库
+qrcodes/
+*.local.conf
+*.private.conf
+*backup*.conf
+*自用*.conf
+*.lcf
+*.p12
+*.cer
+*.crt
+*.key

@@ -1,0 +1,14 @@
+# 自用强制直连补充规则 (policy=DIRECT)
+# 用途：遇到被误判走代理的国内网站、网银、政企站点或大体积更新 CDN，直接追加在此文件即可最高优先级直连
+# 注意：远程规则文件内每行末尾【不要】写策略名，策略已在 Loon.conf 的 [Remote Rule] 中绑定为 DIRECT
+
+# 苹果中国与云上贵州强制直连
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,icloud.com.cn
+
+# 微软 Office 与系统更新国内 CDN 满速直连
+DOMAIN-SUFFIX,officecdnmac.microsoft.com
+DOMAIN-SUFFIX,officecdn.microsoft.com.edgesuite.net
+DOMAIN-SUFFIX,cdn.office.net
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,delivery.mp.microsoft.com

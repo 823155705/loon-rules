@@ -1,0 +1,7 @@
+# 自用屏蔽 / 去广告补充规则 (policy=REJECT)
+# 支持语法：DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP-CIDR,x.x.x.x/xx,no-resolve
+# 注意：远程规则文件内每行末尾【不要】写策略名，策略已在 Loon.conf 的 [Remote Rule] 中绑定为 REJECT
+
+DOMAIN-SUFFIX,adservice.google.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com

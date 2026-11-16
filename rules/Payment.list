@@ -1,0 +1,48 @@
+# 自用跨境支付与 IP 纯净度 / DNS 泄露检测规则 (policy=跨境支付)
+# 用途：绑卡结账渠道与各类验 IP 网站统一归入「跨境支付」，便于独立切换住宅链式代理并核验出口
+# 注意：远程规则文件内每行末尾【不要】写策略名，策略已在 Loon.conf 的 [Remote Rule] 中绑定为 跨境支付
+
+# 跨境支付补充（PayPal / Stripe 已由下方完整规则集覆盖，此处补充 Wise 与 Google Pay）
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,payments.google.com
+DOMAIN-SUFFIX,pay.google.com
+
+# 住宅代理连通性与欺诈分 / 纯净度检测站
+DOMAIN-SUFFIX,brdtest.com
+DOMAIN-SUFFIX,ippure.com
+DOMAIN-SUFFIX,123169.xyz
+DOMAIN-SUFFIX,999831.xyz
+DOMAIN-SUFFIX,ping0.cc
+DOMAIN,ipv4.ping0.cc
+DOMAIN,ipv6.ping0.cc
+DOMAIN-SUFFIX,scamalytics.com
+DOMAIN-SUFFIX,ipqualityscore.com
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ipcheck.ing
+DOMAIN-SUFFIX,check.place
+DOMAIN-SUFFIX,pixelscan.net
+DOMAIN,ip-scan.adspower.net
+
+# DNS / WebRTC 泄露检测站（已整合 Prevent_DNS_Leaks 规则，无需再挂额外防泄露插件）
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.net
+DOMAIN-SUFFIX,browserleaks.org
+DOMAIN-SUFFIX,dnsleaktest.com
+DOMAIN-SUFFIX,dnsleak.com
+DOMAIN-SUFFIX,dnsleak.asn247.net
+DOMAIN-SUFFIX,bash.ws
+DOMAIN-SUFFIX,ipleak.net
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,whrq.net
+DOMAIN-SUFFIX,surfshark.com
+DOMAIN-SUFFIX,surfsharkdns.com
+DOMAIN-SUFFIX,fastly-analytics.com
+DOMAIN-SUFFIX,expressvpn.com
+DOMAIN-SUFFIX,nordvpn.com
+DOMAIN-SUFFIX,perfect-privacy.com
+DOMAIN-SUFFIX,vpnunlimited.com
+DOMAIN-SUFFIX,astrill.com
+DOMAIN-SUFFIX,astrill.org

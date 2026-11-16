@@ -1,0 +1,16 @@
+# 自用 AI 专线补充规则 (policy=AI专线)
+# 用途：新出的 AI 工具、模型 API、AI IDE 域名追加在此处，最高优先级归入「AI专线」策略组
+# 注意：远程规则文件内每行末尾【不要】写策略名，策略已在 Loon.conf 的 [Remote Rule] 中绑定为 AI专线
+
+# Cursor / AI 编程工具
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+
+# 核心模型平台兜底保优
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com
